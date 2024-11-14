@@ -1,0 +1,28 @@
+node -v
+npm -v
+
+npm cache clean --force
+npm install -g npx
+
+npx create-next-app@latest bikestore
+npm install -D tailwindcss
+npx tailwind init
+npm install next mssql dotenv
+
+npm install --save mssql msnodesqlv8
+npm install mssql msnodesqlv8
+
+---
+Need to install the following packages:
+create-next-app@15.0.3
+Ok to proceed? (y) y
+
+√ Would you like to use TypeScript? ... No
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... Yes
+√ Would you like your code inside a `src/` directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to use Turbopack for next dev? ... No
+√ Would you like to customize the import alias (@/* by default)? ... No
+Creating a new Next.js app in C:\HybridCloud03_wsm\프로젝트\win22-mssql-next\bikestore.
+
