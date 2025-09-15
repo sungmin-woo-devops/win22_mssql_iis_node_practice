@@ -29,11 +29,33 @@ win22-mssql-iis-node-practice/
 
 ## Quickstart
 1) MSSQL 설치/ODBC 드라이버
-2) DB 준비
-3) 백엔드
-4) 프런트엔드
-5) IIS 연동
-
+    - ODBC 64bit 설치(서버의 Node 비트와 일치)
+    - `docs/install_mssql.md` 참고
+3) DB 준비
+    ```bash
+    # .env
+    DB_HOST=localhost
+    DB_PORT=1433
+    DB_USER=sa
+    DB_PASS=****
+    DB_NAME=BikeStore
+    ```
+4) 백엔드
+    ```bash
+    cd apps/backend
+    npm i
+    npm run dev
+    ```
+5) 프런트엔드
+    ```bash
+    cd apps/frontend
+    npm i
+    npm run dec
+    # BACKEND_URL=.env로 주입, axios 호출
+    ```
+6) IIS 연동
+    - `infra/iis/web.config` 예제 적용
+    - 프록시로 Node 포트(예: 3000/4000) 노출
 
 ## Notes
 - Windows 방화벽 인바운드 1433 허용
